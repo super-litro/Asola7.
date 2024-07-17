@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="main_page_style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>ASOLA_Market</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+        <div>
+            <img src="logo.jpeg" alt="logo icon">
+        </div>
+        <h1 class="logo-name">أسولة العسولة</h1>
+        </div>
+        <ul class="menu">
+            <li><a href="" class="active">الشاشة الرئيسية</a></li>
+            <li><a href="">معلومات</a></li>
+            <li><a href=""><i class="fa-solid fa-cart-shopping"></i> عربة التسوق</a></li>
+            <li><a href="log_in_page.html"><i class="fa fa-right-to-bracket"></i> تسجيل الدخول</li></a>
+        </ul>
+        
+        <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+        </div>
+    </nav>
+    
+    <div class="content">
+        <div class="search-bar">
+            <input type="text" placeholder="ابحث عن أي شيء" dir="rtl">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <img src="banner (1).jpg" alt="" class="img1">
+    </div>
+
+    <section class="only-computer content2">
+        <div class="content-head">
+            <h2>أحدث الموضة</h2>
+            <p>في ملابس النساء </p>
+            <button>تسوق الآن</button>
+        </div>
+        <img src="image.png" alt="صورة">
+    </section>
+
+    <h2>: أحدث منتجاتنا</h2>
+    <div class="products">
+
+        <!-- بداية الكرت -->
+        <div class="card">
+            <div class="img"><img src="products/1.jpeg" alt="صورة المنتج"></div>
+            <div class="desc">الوصف</div>
+            <!-- الوصف: نساء، مراهقون، أطفال -->
+            <div class="title">اسم المنتج</div>
+            <div class="box">
+                <div class="price">السعر</div>
+                <button class="btn"><i class="fa fa-cart-plus"></i> إضافه الي عربة التسوق</button>
+            </div>
+        </div>
+        <!-- نهاية الكرت -->
+
+    </div>
+
+    <!-- جيكويري -->
+
+    <script>
+        $(".menu-btn").click(function (){
+            $(".navbar .menu").toggleClass("active")
+            $(".menu-btn i").toggleClass("active");
+        });
+    </script>
+    
+</body>
+</html>
